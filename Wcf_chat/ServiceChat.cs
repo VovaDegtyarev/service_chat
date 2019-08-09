@@ -16,7 +16,7 @@ namespace Wcf_chat
     public class ServiceChat : IServiceChat
     {
 
-        //список объектов (пользователей) типа ServerUser 
+        //список объектов (пользователей) типа ServerUser
         List<ServerUser> users = new List<ServerUser>();
 
         //переменная для генерации id пользователя
@@ -24,7 +24,7 @@ namespace Wcf_chat
 
         //--------------------------------------------------------------------------------------------------------------------------
 
-        //подключение пользователя
+        //подключение пользователя к серверу
         public int Connect(string name, out List<ServerUser> userList)
         {
             ServerUser user = new ServerUser() // создаём нового пользователя и инициализируем его поля
